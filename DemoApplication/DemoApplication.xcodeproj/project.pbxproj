@@ -31,6 +31,20 @@
 			remoteGlobalIDString = 0408EA731F5EC2200037BB93;
 			remoteInfo = DemoApplication;
 		};
+		0408EAAA1F5EC2A60037BB93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0408EAA51F5EC2A50037BB93 /* SwiftyGantt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0408EA0B1F5EC17A0037BB93;
+			remoteInfo = SwiftyGantt;
+		};
+		0408EAAC1F5EC2A60037BB93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0408EAA51F5EC2A50037BB93 /* SwiftyGantt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0408EA141F5EC17A0037BB93;
+			remoteInfo = SwiftyGanttTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +61,7 @@
 		0408EA931F5EC2200037BB93 /* DemoApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408EA971F5EC2200037BB93 /* DemoApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApplicationUITests.swift; sourceTree = "<group>"; };
 		0408EA991F5EC2200037BB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0408EAA51F5EC2A50037BB93 /* SwiftyGantt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyGantt.xcodeproj; path = ../SwiftyGantt.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,7 @@
 				0408EA8B1F5EC2200037BB93 /* DemoApplicationTests */,
 				0408EA961F5EC2200037BB93 /* DemoApplicationUITests */,
 				0408EA751F5EC2200037BB93 /* Products */,
+				0408EAA51F5EC2A50037BB93 /* SwiftyGantt.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +139,15 @@
 				0408EA991F5EC2200037BB93 /* Info.plist */,
 			);
 			path = DemoApplicationUITests;
+			sourceTree = "<group>";
+		};
+		0408EAA61F5EC2A50037BB93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0408EAAB1F5EC2A60037BB93 /* SwiftyGantt.framework */,
+				0408EAAD1F5EC2A60037BB93 /* SwiftyGanttTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +218,7 @@
 				TargetAttributes = {
 					0408EA731F5EC2200037BB93 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NG4PAUE398;
 						ProvisioningStyle = Automatic;
 					};
 					0408EA871F5EC2200037BB93 = {
@@ -218,6 +244,12 @@
 			mainGroup = 0408EA6B1F5EC2200037BB93;
 			productRefGroup = 0408EA751F5EC2200037BB93 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0408EAA61F5EC2A50037BB93 /* Products */;
+					ProjectRef = 0408EAA51F5EC2A50037BB93 /* SwiftyGantt.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0408EA731F5EC2200037BB93 /* DemoApplication */,
@@ -226,6 +258,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0408EAAB1F5EC2A60037BB93 /* SwiftyGantt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyGantt.framework;
+			remoteRef = 0408EAAA1F5EC2A60037BB93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0408EAAD1F5EC2A60037BB93 /* SwiftyGanttTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyGanttTests.xctest;
+			remoteRef = 0408EAAC1F5EC2A60037BB93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0408EA721F5EC2200037BB93 /* Resources */ = {
@@ -356,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -414,7 +463,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NG4PAUE398;
 				INFOPLIST_FILE = DemoApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TomosukeOkada.DemoApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +477,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NG4PAUE398;
 				INFOPLIST_FILE = DemoApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TomosukeOkada.DemoApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +560,7 @@
 				0408EA9E1F5EC2200037BB93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0408EA9F1F5EC2200037BB93 /* Build configuration list for PBXNativeTarget "DemoApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +569,7 @@
 				0408EAA11F5EC2200037BB93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0408EAA21F5EC2200037BB93 /* Build configuration list for PBXNativeTarget "DemoApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +578,7 @@
 				0408EAA41F5EC2200037BB93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
