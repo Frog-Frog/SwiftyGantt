@@ -1,1 +1,1 @@
-# -SwiftyGantt
+# SwiftyGantt
