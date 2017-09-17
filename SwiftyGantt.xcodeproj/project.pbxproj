@@ -13,7 +13,6 @@
 		041BD6ED1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6EC1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift */; };
 		041BD6EF1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6EE1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift */; };
 		041BD6F21F6D61BA0044F4D6 /* GanttChartColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6F11F6D61BA0044F4D6 /* GanttChartColor.swift */; };
-		041BD6F51F6D61D00044F4D6 /* GanttChartSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6F41F6D61D00044F4D6 /* GanttChartSize.swift */; };
 		046F9C5A1F6CB32700910EE4 /* OTGanttChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C371F6CB32700910EE4 /* OTGanttChartView.h */; };
 		046F9C5B1F6CB32700910EE4 /* OTGanttChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C381F6CB32700910EE4 /* OTGanttChartView.m */; };
 		046F9C5C1F6CB32700910EE4 /* GanttChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9C391F6CB32700910EE4 /* GanttChartView.xib */; };
@@ -61,6 +60,7 @@
 		046F9C921F6CC22B00910EE4 /* GanttChartBaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C901F6CC22B00910EE4 /* GanttChartBaseSection.swift */; };
 		046F9C941F6CC25600910EE4 /* GanttChartDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C931F6CC25600910EE4 /* GanttChartDrawView.swift */; };
 		046F9C951F6CC25600910EE4 /* GanttChartDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C931F6CC25600910EE4 /* GanttChartDrawView.swift */; };
+		0490D8D61F6E03E700340EC8 /* GanttChartSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490D8D51F6E03E700340EC8 /* GanttChartSize.swift */; };
 		04FA34E91F6DD82100CA58A5 /* GanttChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34E81F6DD82100CA58A5 /* GanttChartData.swift */; };
 		04FA34F01F6DDC4B00CA58A5 /* Date+dateInMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34EF1F6DDC4B00CA58A5 /* Date+dateInMonth.swift */; };
 		04FA34F31F6DDCCF00CA58A5 /* Date+differenceMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34F21F6DDCCF00CA58A5 /* Date+differenceMonths.swift */; };
@@ -95,7 +95,6 @@
 		041BD6EC1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartDrawingClass.swift; sourceTree = "<group>"; };
 		041BD6EE1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartCommonClass.swift; sourceTree = "<group>"; };
 		041BD6F11F6D61BA0044F4D6 /* GanttChartColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GanttChartColor.swift; path = DataClass/GanttChartColor.swift; sourceTree = "<group>"; };
-		041BD6F41F6D61D00044F4D6 /* GanttChartSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartSize.swift; sourceTree = "<group>"; };
 		046F9C371F6CB32700910EE4 /* OTGanttChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGanttChartView.h; sourceTree = "<group>"; };
 		046F9C381F6CB32700910EE4 /* OTGanttChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGanttChartView.m; sourceTree = "<group>"; };
 		046F9C391F6CB32700910EE4 /* GanttChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GanttChartView.xib; sourceTree = "<group>"; };
@@ -133,6 +132,7 @@
 		046F9C8D1F6CC1E400910EE4 /* GanttChartBaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartBaseViewCell.swift; sourceTree = "<group>"; };
 		046F9C901F6CC22B00910EE4 /* GanttChartBaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartBaseSection.swift; sourceTree = "<group>"; };
 		046F9C931F6CC25600910EE4 /* GanttChartDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartDrawView.swift; sourceTree = "<group>"; };
+		0490D8D51F6E03E700340EC8 /* GanttChartSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GanttChartSize.swift; path = DataClass/GanttChartSize.swift; sourceTree = "<group>"; };
 		04FA34E81F6DD82100CA58A5 /* GanttChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GanttChartData.swift; path = DataClass/GanttChartData.swift; sourceTree = "<group>"; };
 		04FA34EF1F6DDC4B00CA58A5 /* Date+dateInMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+dateInMonth.swift"; path = "Extension/Date/Date+dateInMonth.swift"; sourceTree = "<group>"; };
 		04FA34F21F6DDCCF00CA58A5 /* Date+differenceMonths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+differenceMonths.swift"; path = "Extension/Date/Date+differenceMonths.swift"; sourceTree = "<group>"; };
@@ -207,8 +207,8 @@
 		041BD6F01F6D61950044F4D6 /* DataClass */ = {
 			isa = PBXGroup;
 			children = (
+				0490D8D51F6E03E700340EC8 /* GanttChartSize.swift */,
 				041BD6F11F6D61BA0044F4D6 /* GanttChartColor.swift */,
-				041BD6F41F6D61D00044F4D6 /* GanttChartSize.swift */,
 				04FA34E81F6DD82100CA58A5 /* GanttChartData.swift */,
 			);
 			name = DataClass;
@@ -556,10 +556,10 @@
 				04FA35021F6DE08800CA58A5 /* UIColor+hex.swift in Sources */,
 				046F9C771F6CB3EF00910EE4 /* GanttChartViewDelegate.swift in Sources */,
 				046F9C751F6CB35500910EE4 /* GanttChartView.swift in Sources */,
-				041BD6F51F6D61D00044F4D6 /* GanttChartSize.swift in Sources */,
 				041BD6EF1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift in Sources */,
 				046F9C681F6CB32700910EE4 /* OTGTodayFigureView.m in Sources */,
 				046F9C611F6CB32700910EE4 /* OTGChartProcessView.m in Sources */,
+				0490D8D61F6E03E700340EC8 /* GanttChartSize.swift in Sources */,
 				04FA34FE1F6DDF4600CA58A5 /* Date+generateString.swift in Sources */,
 				04FA35041F6DE6DC00CA58A5 /* Date+daysCount.swift in Sources */,
 				046F9C8E1F6CC1E400910EE4 /* GanttChartBaseViewCell.swift in Sources */,
