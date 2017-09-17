@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SwiftyGantt
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

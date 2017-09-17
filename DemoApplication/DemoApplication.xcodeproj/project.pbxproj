@@ -14,6 +14,7 @@
 		0408EA821F5EC2200037BB93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0408EA801F5EC2200037BB93 /* LaunchScreen.storyboard */; };
 		0408EA8D1F5EC2200037BB93 /* DemoApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA8C1F5EC2200037BB93 /* DemoApplicationTests.swift */; };
 		0408EA981F5EC2200037BB93 /* DemoApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA971F5EC2200037BB93 /* DemoApplicationUITests.swift */; };
+		041BD6FA1F6D72D70044F4D6 /* SwiftyGantt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408EAAB1F5EC2A60037BB93 /* SwiftyGantt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041BD6FA1F6D72D70044F4D6 /* SwiftyGantt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
