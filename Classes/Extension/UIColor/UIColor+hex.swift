@@ -9,7 +9,12 @@
 import Foundation
 
 extension UIColor {
-    class func hex (string : String, alpha : CGFloat) -> UIColor {
+    
+    class func hex(_ string: String) -> UIColor {
+        return UIColor.hex(string, alpha: 1.0)
+    }
+    
+    class func hex(_ string: String, alpha: CGFloat) -> UIColor {
         let hex = string.replacingOccurrences(of: "#", with: "")
         let scanner = Scanner(string: hex)
         var color: UInt32 = 0
