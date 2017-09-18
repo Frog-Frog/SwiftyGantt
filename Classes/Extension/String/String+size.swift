@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+extension String {
+    func size(attributes: [String : Any]?) -> CGSize {
+        let string: NSString = self as NSString
+        return string.size(attributes: attributes)
+    }
+}

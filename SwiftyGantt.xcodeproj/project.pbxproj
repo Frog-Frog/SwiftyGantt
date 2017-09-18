@@ -10,9 +10,22 @@
 		0408EA151F5EC17A0037BB93 /* SwiftyGantt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408EA0B1F5EC17A0037BB93 /* SwiftyGantt.framework */; };
 		0408EA1A1F5EC17A0037BB93 /* SwiftyGanttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA191F5EC17A0037BB93 /* SwiftyGanttTests.swift */; };
 		0408EA1C1F5EC17A0037BB93 /* SwiftyGantt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408EA0E1F5EC17A0037BB93 /* SwiftyGantt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		041573E71F6FAB2D007200CA /* Date+adjustZeroClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DB1F6FAB2D007200CA /* Date+adjustZeroClock.swift */; };
+		041573E81F6FAB2D007200CA /* Date+dateInMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DC1F6FAB2D007200CA /* Date+dateInMonth.swift */; };
+		041573E91F6FAB2D007200CA /* Date+daysCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DD1F6FAB2D007200CA /* Date+daysCount.swift */; };
+		041573EA1F6FAB2D007200CA /* Date+differenceDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DE1F6FAB2D007200CA /* Date+differenceDays.swift */; };
+		041573EB1F6FAB2D007200CA /* Date+differenceMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DF1F6FAB2D007200CA /* Date+differenceMonths.swift */; };
+		041573EC1F6FAB2D007200CA /* Date+fromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573E01F6FAB2D007200CA /* Date+fromString.swift */; };
+		041573ED1F6FAB2D007200CA /* Date+generateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573E11F6FAB2D007200CA /* Date+generateString.swift */; };
+		041573EE1F6FAB2D007200CA /* Date+isContain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573E21F6FAB2D007200CA /* Date+isContain.swift */; };
+		041573EF1F6FAB2D007200CA /* Date+isEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573E31F6FAB2D007200CA /* Date+isEqual.swift */; };
+		041573F01F6FAB2D007200CA /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573E61F6FAB2D007200CA /* UIColor+hex.swift */; };
+		041573F51F6FAB58007200CA /* GanttChartColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F21F6FAB58007200CA /* GanttChartColor.swift */; };
+		041573F61F6FAB58007200CA /* GanttChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F31F6FAB58007200CA /* GanttChartData.swift */; };
+		041573F71F6FAB58007200CA /* GanttChartSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F41F6FAB58007200CA /* GanttChartSize.swift */; };
+		041573F91F6FAFE7007200CA /* UIBezierPath+figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573F81F6FAFE7007200CA /* UIBezierPath+figure.swift */; };
 		041BD6ED1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6EC1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift */; };
 		041BD6EF1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6EE1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift */; };
-		041BD6F21F6D61BA0044F4D6 /* GanttChartColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BD6F11F6D61BA0044F4D6 /* GanttChartColor.swift */; };
 		046F9C5A1F6CB32700910EE4 /* OTGanttChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C371F6CB32700910EE4 /* OTGanttChartView.h */; };
 		046F9C5B1F6CB32700910EE4 /* OTGanttChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C381F6CB32700910EE4 /* OTGanttChartView.m */; };
 		046F9C5C1F6CB32700910EE4 /* GanttChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9C391F6CB32700910EE4 /* GanttChartView.xib */; };
@@ -60,18 +73,8 @@
 		046F9C921F6CC22B00910EE4 /* GanttChartBaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C901F6CC22B00910EE4 /* GanttChartBaseSection.swift */; };
 		046F9C941F6CC25600910EE4 /* GanttChartDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C931F6CC25600910EE4 /* GanttChartDrawView.swift */; };
 		046F9C951F6CC25600910EE4 /* GanttChartDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C931F6CC25600910EE4 /* GanttChartDrawView.swift */; };
-		0490D8D61F6E03E700340EC8 /* GanttChartSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490D8D51F6E03E700340EC8 /* GanttChartSize.swift */; };
-		04FA34E91F6DD82100CA58A5 /* GanttChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34E81F6DD82100CA58A5 /* GanttChartData.swift */; };
-		04FA34F01F6DDC4B00CA58A5 /* Date+dateInMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34EF1F6DDC4B00CA58A5 /* Date+dateInMonth.swift */; };
-		04FA34F31F6DDCCF00CA58A5 /* Date+differenceMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34F21F6DDCCF00CA58A5 /* Date+differenceMonths.swift */; };
-		04FA34F51F6DDCE200CA58A5 /* Date+differenceDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34F41F6DDCE200CA58A5 /* Date+differenceDays.swift */; };
-		04FA34F71F6DDD3D00CA58A5 /* Date+adjustZeroClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34F61F6DDD3D00CA58A5 /* Date+adjustZeroClock.swift */; };
-		04FA34FA1F6DDDC500CA58A5 /* Date+isContain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34F91F6DDDC500CA58A5 /* Date+isContain.swift */; };
-		04FA34FE1F6DDF4600CA58A5 /* Date+generateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA34FD1F6DDF4600CA58A5 /* Date+generateString.swift */; };
-		04FA35021F6DE08800CA58A5 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA35011F6DE08800CA58A5 /* UIColor+hex.swift */; };
-		04FA35041F6DE6DC00CA58A5 /* Date+daysCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA35031F6DE6DC00CA58A5 /* Date+daysCount.swift */; };
-		04FA35061F6DE82300CA58A5 /* Date+isEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA35051F6DE82300CA58A5 /* Date+isEqual.swift */; };
-		04FA35081F6DEA7D00CA58A5 /* Date+fromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA35071F6DEA7D00CA58A5 /* Date+fromString.swift */; };
+		04E31FD51F700F5800F8298E /* String+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31FD41F700F5800F8298E /* String+size.swift */; };
+		04E31FD81F70100E00F8298E /* String+draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E31FD71F70100E00F8298E /* String+draw.swift */; };
 		04FA350C1F6DEBC900CA58A5 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA350B1F6DEBC900CA58A5 /* DateExtensionTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,9 +95,22 @@
 		0408EA141F5EC17A0037BB93 /* SwiftyGanttTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGanttTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408EA191F5EC17A0037BB93 /* SwiftyGanttTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGanttTests.swift; sourceTree = "<group>"; };
 		0408EA1B1F5EC17A0037BB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041573DB1F6FAB2D007200CA /* Date+adjustZeroClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+adjustZeroClock.swift"; sourceTree = "<group>"; };
+		041573DC1F6FAB2D007200CA /* Date+dateInMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+dateInMonth.swift"; sourceTree = "<group>"; };
+		041573DD1F6FAB2D007200CA /* Date+daysCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+daysCount.swift"; sourceTree = "<group>"; };
+		041573DE1F6FAB2D007200CA /* Date+differenceDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+differenceDays.swift"; sourceTree = "<group>"; };
+		041573DF1F6FAB2D007200CA /* Date+differenceMonths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+differenceMonths.swift"; sourceTree = "<group>"; };
+		041573E01F6FAB2D007200CA /* Date+fromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+fromString.swift"; sourceTree = "<group>"; };
+		041573E11F6FAB2D007200CA /* Date+generateString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+generateString.swift"; sourceTree = "<group>"; };
+		041573E21F6FAB2D007200CA /* Date+isContain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+isContain.swift"; sourceTree = "<group>"; };
+		041573E31F6FAB2D007200CA /* Date+isEqual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+isEqual.swift"; sourceTree = "<group>"; };
+		041573E61F6FAB2D007200CA /* UIColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		041573F21F6FAB58007200CA /* GanttChartColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartColor.swift; sourceTree = "<group>"; };
+		041573F31F6FAB58007200CA /* GanttChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartData.swift; sourceTree = "<group>"; };
+		041573F41F6FAB58007200CA /* GanttChartSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartSize.swift; sourceTree = "<group>"; };
+		041573F81F6FAFE7007200CA /* UIBezierPath+figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+figure.swift"; sourceTree = "<group>"; };
 		041BD6EC1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartDrawingClass.swift; sourceTree = "<group>"; };
 		041BD6EE1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartCommonClass.swift; sourceTree = "<group>"; };
-		041BD6F11F6D61BA0044F4D6 /* GanttChartColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GanttChartColor.swift; path = DataClass/GanttChartColor.swift; sourceTree = "<group>"; };
 		046F9C371F6CB32700910EE4 /* OTGanttChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGanttChartView.h; sourceTree = "<group>"; };
 		046F9C381F6CB32700910EE4 /* OTGanttChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGanttChartView.m; sourceTree = "<group>"; };
 		046F9C391F6CB32700910EE4 /* GanttChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GanttChartView.xib; sourceTree = "<group>"; };
@@ -132,18 +148,8 @@
 		046F9C8D1F6CC1E400910EE4 /* GanttChartBaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartBaseViewCell.swift; sourceTree = "<group>"; };
 		046F9C901F6CC22B00910EE4 /* GanttChartBaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartBaseSection.swift; sourceTree = "<group>"; };
 		046F9C931F6CC25600910EE4 /* GanttChartDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartDrawView.swift; sourceTree = "<group>"; };
-		0490D8D51F6E03E700340EC8 /* GanttChartSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GanttChartSize.swift; path = DataClass/GanttChartSize.swift; sourceTree = "<group>"; };
-		04FA34E81F6DD82100CA58A5 /* GanttChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GanttChartData.swift; path = DataClass/GanttChartData.swift; sourceTree = "<group>"; };
-		04FA34EF1F6DDC4B00CA58A5 /* Date+dateInMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+dateInMonth.swift"; path = "Extension/Date/Date+dateInMonth.swift"; sourceTree = "<group>"; };
-		04FA34F21F6DDCCF00CA58A5 /* Date+differenceMonths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+differenceMonths.swift"; path = "Extension/Date/Date+differenceMonths.swift"; sourceTree = "<group>"; };
-		04FA34F41F6DDCE200CA58A5 /* Date+differenceDays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+differenceDays.swift"; path = "Extension/Date/Date+differenceDays.swift"; sourceTree = "<group>"; };
-		04FA34F61F6DDD3D00CA58A5 /* Date+adjustZeroClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+adjustZeroClock.swift"; path = "Extension/Date/Date+adjustZeroClock.swift"; sourceTree = "<group>"; };
-		04FA34F91F6DDDC500CA58A5 /* Date+isContain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+isContain.swift"; path = "Extension/Date/Date+isContain.swift"; sourceTree = "<group>"; };
-		04FA34FD1F6DDF4600CA58A5 /* Date+generateString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+generateString.swift"; path = "Extension/Date/Date+generateString.swift"; sourceTree = "<group>"; };
-		04FA35011F6DE08800CA58A5 /* UIColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
-		04FA35031F6DE6DC00CA58A5 /* Date+daysCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+daysCount.swift"; path = "Extension/Date/Date+daysCount.swift"; sourceTree = "<group>"; };
-		04FA35051F6DE82300CA58A5 /* Date+isEqual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+isEqual.swift"; path = "Extension/Date/Date+isEqual.swift"; sourceTree = "<group>"; };
-		04FA35071F6DEA7D00CA58A5 /* Date+fromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+fromString.swift"; path = "Extension/Date/Date+fromString.swift"; sourceTree = "<group>"; };
+		04E31FD41F700F5800F8298E /* String+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+size.swift"; sourceTree = "<group>"; };
+		04E31FD71F70100E00F8298E /* String+draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+draw.swift"; sourceTree = "<group>"; };
 		04FA350B1F6DEBC900CA58A5 /* DateExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensionTest.swift; path = ExtensionTest/Date/DateExtensionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,21 +210,64 @@
 			path = SwiftyGanttTests;
 			sourceTree = "<group>";
 		};
-		041BD6F01F6D61950044F4D6 /* DataClass */ = {
+		041573D91F6FAB2D007200CA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0490D8D51F6E03E700340EC8 /* GanttChartSize.swift */,
-				041BD6F11F6D61BA0044F4D6 /* GanttChartColor.swift */,
-				04FA34E81F6DD82100CA58A5 /* GanttChartData.swift */,
+				04E31FD31F700EC900F8298E /* String */,
+				041573DA1F6FAB2D007200CA /* Date */,
+				041573E41F6FAB2D007200CA /* UIBezierPath */,
+				041573E51F6FAB2D007200CA /* UIColor */,
 			);
-			name = DataClass;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		041573DA1F6FAB2D007200CA /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				041573DB1F6FAB2D007200CA /* Date+adjustZeroClock.swift */,
+				041573DC1F6FAB2D007200CA /* Date+dateInMonth.swift */,
+				041573DD1F6FAB2D007200CA /* Date+daysCount.swift */,
+				041573DE1F6FAB2D007200CA /* Date+differenceDays.swift */,
+				041573DF1F6FAB2D007200CA /* Date+differenceMonths.swift */,
+				041573E01F6FAB2D007200CA /* Date+fromString.swift */,
+				041573E11F6FAB2D007200CA /* Date+generateString.swift */,
+				041573E21F6FAB2D007200CA /* Date+isContain.swift */,
+				041573E31F6FAB2D007200CA /* Date+isEqual.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		041573E41F6FAB2D007200CA /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				041573F81F6FAFE7007200CA /* UIBezierPath+figure.swift */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		041573E51F6FAB2D007200CA /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				041573E61F6FAB2D007200CA /* UIColor+hex.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		041573F11F6FAB58007200CA /* DataClass */ = {
+			isa = PBXGroup;
+			children = (
+				041573F21F6FAB58007200CA /* GanttChartColor.swift */,
+				041573F31F6FAB58007200CA /* GanttChartData.swift */,
+				041573F41F6FAB58007200CA /* GanttChartSize.swift */,
+			);
+			path = DataClass;
 			sourceTree = "<group>";
 		};
 		046F9C351F6CB2B400910EE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				04FA34EA1F6DDBE200CA58A5 /* Extension */,
-				041BD6F01F6D61950044F4D6 /* DataClass */,
+				041573F11F6FAB58007200CA /* DataClass */,
+				041573D91F6FAB2D007200CA /* Extension */,
 				046F9C361F6CB32700910EE4 /* OTGanttChartView */,
 				046F9C3A1F6CB32700910EE4 /* SwiftyGanttImages.xcassets */,
 				046F9C3B1F6CB32700910EE4 /* OTGChartPointView */,
@@ -350,46 +399,13 @@
 			name = DateView;
 			sourceTree = "<group>";
 		};
-		04FA34EA1F6DDBE200CA58A5 /* Extension */ = {
+		04E31FD31F700EC900F8298E /* String */ = {
 			isa = PBXGroup;
 			children = (
-				04FA35001F6DE08800CA58A5 /* UIColor */,
-				04FA34FF1F6DDFFA00CA58A5 /* UIBezierPath */,
-				04FA34EB1F6DDBEA00CA58A5 /* Date */,
+				04E31FD41F700F5800F8298E /* String+size.swift */,
+				04E31FD71F70100E00F8298E /* String+draw.swift */,
 			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
-		04FA34EB1F6DDBEA00CA58A5 /* Date */ = {
-			isa = PBXGroup;
-			children = (
-				04FA34EF1F6DDC4B00CA58A5 /* Date+dateInMonth.swift */,
-				04FA34F21F6DDCCF00CA58A5 /* Date+differenceMonths.swift */,
-				04FA34F41F6DDCE200CA58A5 /* Date+differenceDays.swift */,
-				04FA34F61F6DDD3D00CA58A5 /* Date+adjustZeroClock.swift */,
-				04FA34F91F6DDDC500CA58A5 /* Date+isContain.swift */,
-				04FA34FD1F6DDF4600CA58A5 /* Date+generateString.swift */,
-				04FA35031F6DE6DC00CA58A5 /* Date+daysCount.swift */,
-				04FA35051F6DE82300CA58A5 /* Date+isEqual.swift */,
-				04FA35071F6DEA7D00CA58A5 /* Date+fromString.swift */,
-			);
-			name = Date;
-			sourceTree = "<group>";
-		};
-		04FA34FF1F6DDFFA00CA58A5 /* UIBezierPath */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UIBezierPath;
-			sourceTree = "<group>";
-		};
-		04FA35001F6DE08800CA58A5 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				04FA35011F6DE08800CA58A5 /* UIColor+hex.swift */,
-			);
-			name = UIColor;
-			path = Extension/UIColor;
+			path = String;
 			sourceTree = "<group>";
 		};
 		04FA35091F6DEB9C00CA58A5 /* ExtensionTest */ = {
@@ -534,41 +550,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FA34FA1F6DDDC500CA58A5 /* Date+isContain.swift in Sources */,
-				04FA34E91F6DD82100CA58A5 /* GanttChartData.swift in Sources */,
-				04FA35061F6DE82300CA58A5 /* Date+isEqual.swift in Sources */,
-				04FA34F31F6DDCCF00CA58A5 /* Date+differenceMonths.swift in Sources */,
+				041573EC1F6FAB2D007200CA /* Date+fromString.swift in Sources */,
+				041573EF1F6FAB2D007200CA /* Date+isEqual.swift in Sources */,
 				046F9C801F6CB67300910EE4 /* GanttChartProcessView.swift in Sources */,
-				04FA34F71F6DDD3D00CA58A5 /* Date+adjustZeroClock.swift in Sources */,
 				046F9C711F6CB32700910EE4 /* OTGCommonClass.m in Sources */,
+				041573EB1F6FAB2D007200CA /* Date+differenceMonths.swift in Sources */,
 				046F9C731F6CB32700910EE4 /* OTGDrawingCommonClass.m in Sources */,
-				04FA34F01F6DDC4B00CA58A5 /* Date+dateInMonth.swift in Sources */,
+				041573F01F6FAB2D007200CA /* UIColor+hex.swift in Sources */,
+				041573F71F6FAB58007200CA /* GanttChartSize.swift in Sources */,
+				041573F51F6FAB58007200CA /* GanttChartColor.swift in Sources */,
 				046F9C661F6CB32700910EE4 /* OTGDateView.m in Sources */,
+				041573F61F6FAB58007200CA /* GanttChartData.swift in Sources */,
 				041BD6ED1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift in Sources */,
+				04E31FD81F70100E00F8298E /* String+draw.swift in Sources */,
 				046F9C631F6CB32700910EE4 /* OTGChartView.m in Sources */,
+				04E31FD51F700F5800F8298E /* String+size.swift in Sources */,
+				041573E81F6FAB2D007200CA /* Date+dateInMonth.swift in Sources */,
 				046F9C6C1F6CB32700910EE4 /* OTGChartDrawView.m in Sources */,
 				046F9C8B1F6CC19200910EE4 /* TodayFigureView.swift in Sources */,
-				04FA35081F6DEA7D00CA58A5 /* Date+fromString.swift in Sources */,
+				041573E91F6FAB2D007200CA /* Date+daysCount.swift in Sources */,
 				046F9C911F6CC22B00910EE4 /* GanttChartBaseSection.swift in Sources */,
 				046F9C881F6CC17A00910EE4 /* DateView.swift in Sources */,
 				046F9C5B1F6CB32700910EE4 /* OTGanttChartView.m in Sources */,
-				041BD6F21F6D61BA0044F4D6 /* GanttChartColor.swift in Sources */,
-				04FA35021F6DE08800CA58A5 /* UIColor+hex.swift in Sources */,
+				041573E71F6FAB2D007200CA /* Date+adjustZeroClock.swift in Sources */,
 				046F9C771F6CB3EF00910EE4 /* GanttChartViewDelegate.swift in Sources */,
 				046F9C751F6CB35500910EE4 /* GanttChartView.swift in Sources */,
 				041BD6EF1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift in Sources */,
 				046F9C681F6CB32700910EE4 /* OTGTodayFigureView.m in Sources */,
 				046F9C611F6CB32700910EE4 /* OTGChartProcessView.m in Sources */,
-				0490D8D61F6E03E700340EC8 /* GanttChartSize.swift in Sources */,
-				04FA34FE1F6DDF4600CA58A5 /* Date+generateString.swift in Sources */,
-				04FA35041F6DE6DC00CA58A5 /* Date+daysCount.swift in Sources */,
+				041573ED1F6FAB2D007200CA /* Date+generateString.swift in Sources */,
 				046F9C8E1F6CC1E400910EE4 /* GanttChartBaseViewCell.swift in Sources */,
 				046F9C831F6CC0AC00910EE4 /* GanttChartBaseView.swift in Sources */,
 				046F9C941F6CC25600910EE4 /* GanttChartDrawView.swift in Sources */,
+				041573EE1F6FAB2D007200CA /* Date+isContain.swift in Sources */,
+				041573F91F6FAFE7007200CA /* UIBezierPath+figure.swift in Sources */,
 				046F9C6E1F6CB32700910EE4 /* OTGChartSectionView.m in Sources */,
 				046F9C7A1F6CB40100910EE4 /* GanttChartViewDataSource.swift in Sources */,
 				046F9C6A1F6CB32700910EE4 /* OTGChartViewCell.m in Sources */,
-				04FA34F51F6DDCE200CA58A5 /* Date+differenceDays.swift in Sources */,
+				041573EA1F6FAB2D007200CA /* Date+differenceDays.swift in Sources */,
 				046F9C7D1F6CB65B00910EE4 /* GanttChartPointView.swift in Sources */,
 				046F9C5F1F6CB32700910EE4 /* OTGChartPointView.m in Sources */,
 			);
