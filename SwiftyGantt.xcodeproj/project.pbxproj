@@ -10,6 +10,7 @@
 		0408EA151F5EC17A0037BB93 /* SwiftyGantt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408EA0B1F5EC17A0037BB93 /* SwiftyGantt.framework */; };
 		0408EA1A1F5EC17A0037BB93 /* SwiftyGanttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA191F5EC17A0037BB93 /* SwiftyGanttTests.swift */; };
 		0408EA1C1F5EC17A0037BB93 /* SwiftyGantt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0408EA0E1F5EC17A0037BB93 /* SwiftyGantt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0409E63C1F70DF1200B9CC0D /* NSObject+stringFromClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409E63B1F70DF1200B9CC0D /* NSObject+stringFromClass.swift */; };
 		041573E71F6FAB2D007200CA /* Date+adjustZeroClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DB1F6FAB2D007200CA /* Date+adjustZeroClock.swift */; };
 		041573E81F6FAB2D007200CA /* Date+dateInMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DC1F6FAB2D007200CA /* Date+dateInMonth.swift */; };
 		041573E91F6FAB2D007200CA /* Date+daysCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041573DD1F6FAB2D007200CA /* Date+daysCount.swift */; };
@@ -48,10 +49,6 @@
 		046F9C6D1F6CB32700910EE4 /* OTGChartSectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C521F6CB32700910EE4 /* OTGChartSectionView.h */; };
 		046F9C6E1F6CB32700910EE4 /* OTGChartSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C531F6CB32700910EE4 /* OTGChartSectionView.m */; };
 		046F9C6F1F6CB32700910EE4 /* OTGanttChartConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C551F6CB32700910EE4 /* OTGanttChartConstant.h */; };
-		046F9C701F6CB32700910EE4 /* OTGCommonClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C561F6CB32700910EE4 /* OTGCommonClass.h */; };
-		046F9C711F6CB32700910EE4 /* OTGCommonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C571F6CB32700910EE4 /* OTGCommonClass.m */; };
-		046F9C721F6CB32700910EE4 /* OTGDrawingCommonClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C581F6CB32700910EE4 /* OTGDrawingCommonClass.h */; };
-		046F9C731F6CB32700910EE4 /* OTGDrawingCommonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C591F6CB32700910EE4 /* OTGDrawingCommonClass.m */; };
 		046F9C751F6CB35500910EE4 /* GanttChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C741F6CB35500910EE4 /* GanttChartView.swift */; };
 		046F9C771F6CB3EF00910EE4 /* GanttChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C761F6CB3EF00910EE4 /* GanttChartViewDelegate.swift */; };
 		046F9C781F6CB3EF00910EE4 /* GanttChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C761F6CB3EF00910EE4 /* GanttChartViewDelegate.swift */; };
@@ -95,6 +92,7 @@
 		0408EA141F5EC17A0037BB93 /* SwiftyGanttTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGanttTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0408EA191F5EC17A0037BB93 /* SwiftyGanttTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGanttTests.swift; sourceTree = "<group>"; };
 		0408EA1B1F5EC17A0037BB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0409E63B1F70DF1200B9CC0D /* NSObject+stringFromClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+stringFromClass.swift"; sourceTree = "<group>"; };
 		041573DB1F6FAB2D007200CA /* Date+adjustZeroClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+adjustZeroClock.swift"; sourceTree = "<group>"; };
 		041573DC1F6FAB2D007200CA /* Date+dateInMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+dateInMonth.swift"; sourceTree = "<group>"; };
 		041573DD1F6FAB2D007200CA /* Date+daysCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+daysCount.swift"; sourceTree = "<group>"; };
@@ -133,10 +131,6 @@
 		046F9C521F6CB32700910EE4 /* OTGChartSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGChartSectionView.h; sourceTree = "<group>"; };
 		046F9C531F6CB32700910EE4 /* OTGChartSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGChartSectionView.m; sourceTree = "<group>"; };
 		046F9C551F6CB32700910EE4 /* OTGanttChartConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGanttChartConstant.h; sourceTree = "<group>"; };
-		046F9C561F6CB32700910EE4 /* OTGCommonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGCommonClass.h; sourceTree = "<group>"; };
-		046F9C571F6CB32700910EE4 /* OTGCommonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGCommonClass.m; sourceTree = "<group>"; };
-		046F9C581F6CB32700910EE4 /* OTGDrawingCommonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGDrawingCommonClass.h; sourceTree = "<group>"; };
-		046F9C591F6CB32700910EE4 /* OTGDrawingCommonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGDrawingCommonClass.m; sourceTree = "<group>"; };
 		046F9C741F6CB35500910EE4 /* GanttChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartView.swift; sourceTree = "<group>"; };
 		046F9C761F6CB3EF00910EE4 /* GanttChartViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartViewDelegate.swift; sourceTree = "<group>"; };
 		046F9C791F6CB40100910EE4 /* GanttChartViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanttChartViewDataSource.swift; sourceTree = "<group>"; };
@@ -210,9 +204,18 @@
 			path = SwiftyGanttTests;
 			sourceTree = "<group>";
 		};
+		0409E63A1F70DEDF00B9CC0D /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				0409E63B1F70DF1200B9CC0D /* NSObject+stringFromClass.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		041573D91F6FAB2D007200CA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0409E63A1F70DEDF00B9CC0D /* NSObject */,
 				04E31FD31F700EC900F8298E /* String */,
 				041573DA1F6FAB2D007200CA /* Date */,
 				041573E41F6FAB2D007200CA /* UIBezierPath */,
@@ -273,7 +276,7 @@
 				046F9C3B1F6CB32700910EE4 /* OTGChartPointView */,
 				046F9C3E1F6CB32700910EE4 /* OTGChartProcessView */,
 				046F9C411F6CB32700910EE4 /* OTGChartView */,
-				046F9C541F6CB32700910EE4 /* OTGCommonClass */,
+				046F9C541F6CB32700910EE4 /* CommonClass */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -365,18 +368,14 @@
 			path = Section;
 			sourceTree = "<group>";
 		};
-		046F9C541F6CB32700910EE4 /* OTGCommonClass */ = {
+		046F9C541F6CB32700910EE4 /* CommonClass */ = {
 			isa = PBXGroup;
 			children = (
 				046F9C551F6CB32700910EE4 /* OTGanttChartConstant.h */,
-				046F9C561F6CB32700910EE4 /* OTGCommonClass.h */,
-				046F9C571F6CB32700910EE4 /* OTGCommonClass.m */,
-				046F9C581F6CB32700910EE4 /* OTGDrawingCommonClass.h */,
-				046F9C591F6CB32700910EE4 /* OTGDrawingCommonClass.m */,
 				041BD6EC1F6D5AF50044F4D6 /* GanttChartDrawingClass.swift */,
 				041BD6EE1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift */,
 			);
-			path = OTGCommonClass;
+			path = CommonClass;
 			sourceTree = "<group>";
 		};
 		046F9C851F6CC12F00910EE4 /* TodayFigureView */ = {
@@ -434,8 +433,6 @@
 				046F9C5E1F6CB32700910EE4 /* OTGChartPointView.h in Headers */,
 				046F9C601F6CB32700910EE4 /* OTGChartProcessView.h in Headers */,
 				046F9C651F6CB32700910EE4 /* OTGDateView.h in Headers */,
-				046F9C701F6CB32700910EE4 /* OTGCommonClass.h in Headers */,
-				046F9C721F6CB32700910EE4 /* OTGDrawingCommonClass.h in Headers */,
 				046F9C621F6CB32700910EE4 /* OTGChartView.h in Headers */,
 				046F9C5A1F6CB32700910EE4 /* OTGanttChartView.h in Headers */,
 				0408EA1C1F5EC17A0037BB93 /* SwiftyGantt.h in Headers */,
@@ -493,7 +490,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = TomosukeOkada;
 				TargetAttributes = {
 					0408EA0A1F5EC17A0037BB93 = {
@@ -553,11 +550,10 @@
 				041573EC1F6FAB2D007200CA /* Date+fromString.swift in Sources */,
 				041573EF1F6FAB2D007200CA /* Date+isEqual.swift in Sources */,
 				046F9C801F6CB67300910EE4 /* GanttChartProcessView.swift in Sources */,
-				046F9C711F6CB32700910EE4 /* OTGCommonClass.m in Sources */,
 				041573EB1F6FAB2D007200CA /* Date+differenceMonths.swift in Sources */,
-				046F9C731F6CB32700910EE4 /* OTGDrawingCommonClass.m in Sources */,
 				041573F01F6FAB2D007200CA /* UIColor+hex.swift in Sources */,
 				041573F71F6FAB58007200CA /* GanttChartSize.swift in Sources */,
+				0409E63C1F70DF1200B9CC0D /* NSObject+stringFromClass.swift in Sources */,
 				041573F51F6FAB58007200CA /* GanttChartColor.swift in Sources */,
 				046F9C661F6CB32700910EE4 /* OTGDateView.m in Sources */,
 				041573F61F6FAB58007200CA /* GanttChartData.swift in Sources */,
@@ -633,7 +629,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -641,7 +639,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -687,7 +689,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -695,7 +699,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

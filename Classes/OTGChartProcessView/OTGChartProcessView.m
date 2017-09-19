@@ -19,7 +19,6 @@
 
 #import "OTGChartProcessView.h"
 
-#import "OTGCommonClass.h"
 #import "OTGDrawingCommonClass.h"
 
 @interface OTGChartProcessView()

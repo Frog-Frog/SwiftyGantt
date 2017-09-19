@@ -14,7 +14,8 @@
 		0408EA821F5EC2200037BB93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0408EA801F5EC2200037BB93 /* LaunchScreen.storyboard */; };
 		0408EA8D1F5EC2200037BB93 /* DemoApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA8C1F5EC2200037BB93 /* DemoApplicationTests.swift */; };
 		0408EA981F5EC2200037BB93 /* DemoApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408EA971F5EC2200037BB93 /* DemoApplicationUITests.swift */; };
-		041BD6FA1F6D72D70044F4D6 /* SwiftyGantt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408EAAB1F5EC2A60037BB93 /* SwiftyGantt.framework */; };
+		04E31FDC1F70283700F8298E /* SwiftyGantt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408EAAB1F5EC2A60037BB93 /* SwiftyGantt.framework */; };
+		04E31FDD1F70283700F8298E /* SwiftyGantt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0408EAAB1F5EC2A60037BB93 /* SwiftyGantt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,28 @@
 			remoteGlobalIDString = 0408EA141F5EC17A0037BB93;
 			remoteInfo = SwiftyGanttTests;
 		};
+		04E31FDE1F70283700F8298E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0408EAA51F5EC2A50037BB93 /* SwiftyGantt.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0408EA0A1F5EC17A0037BB93;
+			remoteInfo = SwiftyGantt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E31FE01F70283800F8298E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04E31FDD1F70283700F8298E /* SwiftyGantt.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0408EA741F5EC2200037BB93 /* DemoApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041BD6FA1F6D72D70044F4D6 /* SwiftyGantt.framework in Frameworks */,
+				04E31FDC1F70283700F8298E /* SwiftyGantt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,10 +184,12 @@
 				0408EA701F5EC2200037BB93 /* Sources */,
 				0408EA711F5EC2200037BB93 /* Frameworks */,
 				0408EA721F5EC2200037BB93 /* Resources */,
+				04E31FE01F70283800F8298E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04E31FDF1F70283700F8298E /* PBXTargetDependency */,
 			);
 			name = DemoApplication;
 			productName = DemoApplication;
@@ -215,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = TomosukeOkada;
 				TargetAttributes = {
 					0408EA731F5EC2200037BB93 = {
@@ -344,6 +368,11 @@
 			target = 0408EA731F5EC2200037BB93 /* DemoApplication */;
 			targetProxy = 0408EA941F5EC2200037BB93 /* PBXContainerItemProxy */;
 		};
+		04E31FDF1F70283700F8298E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyGantt;
+			targetProxy = 04E31FDE1F70283700F8298E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -376,7 +405,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -384,7 +415,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -427,7 +462,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -435,7 +472,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -464,6 +505,7 @@
 		0408EA9D1F5EC2200037BB93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NG4PAUE398;
 				INFOPLIST_FILE = DemoApplication/Info.plist;
@@ -478,6 +520,7 @@
 		0408EA9E1F5EC2200037BB93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NG4PAUE398;
 				INFOPLIST_FILE = DemoApplication/Info.plist;
