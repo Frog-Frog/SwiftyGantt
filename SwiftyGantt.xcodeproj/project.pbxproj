@@ -33,8 +33,6 @@
 		046F9C5D1F6CB32700910EE4 /* SwiftyGanttImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046F9C3A1F6CB32700910EE4 /* SwiftyGanttImages.xcassets */; };
 		046F9C5E1F6CB32700910EE4 /* OTGChartPointView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C3C1F6CB32700910EE4 /* OTGChartPointView.h */; };
 		046F9C5F1F6CB32700910EE4 /* OTGChartPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C3D1F6CB32700910EE4 /* OTGChartPointView.m */; };
-		046F9C601F6CB32700910EE4 /* OTGChartProcessView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C3F1F6CB32700910EE4 /* OTGChartProcessView.h */; };
-		046F9C611F6CB32700910EE4 /* OTGChartProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C401F6CB32700910EE4 /* OTGChartProcessView.m */; };
 		046F9C621F6CB32700910EE4 /* OTGChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F9C421F6CB32700910EE4 /* OTGChartView.h */; };
 		046F9C631F6CB32700910EE4 /* OTGChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046F9C431F6CB32700910EE4 /* OTGChartView.m */; };
 		046F9C641F6CB32700910EE4 /* GanttChartBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9C441F6CB32700910EE4 /* GanttChartBaseView.xib */; };
@@ -115,8 +113,6 @@
 		046F9C3A1F6CB32700910EE4 /* SwiftyGanttImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftyGanttImages.xcassets; sourceTree = "<group>"; };
 		046F9C3C1F6CB32700910EE4 /* OTGChartPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGChartPointView.h; sourceTree = "<group>"; };
 		046F9C3D1F6CB32700910EE4 /* OTGChartPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGChartPointView.m; sourceTree = "<group>"; };
-		046F9C3F1F6CB32700910EE4 /* OTGChartProcessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGChartProcessView.h; sourceTree = "<group>"; };
-		046F9C401F6CB32700910EE4 /* OTGChartProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGChartProcessView.m; sourceTree = "<group>"; };
 		046F9C421F6CB32700910EE4 /* OTGChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGChartView.h; sourceTree = "<group>"; };
 		046F9C431F6CB32700910EE4 /* OTGChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGChartView.m; sourceTree = "<group>"; };
 		046F9C441F6CB32700910EE4 /* GanttChartBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GanttChartBaseView.xib; sourceTree = "<group>"; };
@@ -307,8 +303,6 @@
 		046F9C3E1F6CB32700910EE4 /* OTGChartProcessView */ = {
 			isa = PBXGroup;
 			children = (
-				046F9C3F1F6CB32700910EE4 /* OTGChartProcessView.h */,
-				046F9C401F6CB32700910EE4 /* OTGChartProcessView.m */,
 				046F9C7F1F6CB67300910EE4 /* GanttChartProcessView.swift */,
 			);
 			path = OTGChartProcessView;
@@ -431,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				046F9C5E1F6CB32700910EE4 /* OTGChartPointView.h in Headers */,
-				046F9C601F6CB32700910EE4 /* OTGChartProcessView.h in Headers */,
 				046F9C651F6CB32700910EE4 /* OTGDateView.h in Headers */,
 				046F9C621F6CB32700910EE4 /* OTGChartView.h in Headers */,
 				046F9C5A1F6CB32700910EE4 /* OTGanttChartView.h in Headers */,
@@ -573,7 +566,6 @@
 				046F9C751F6CB35500910EE4 /* GanttChartView.swift in Sources */,
 				041BD6EF1F6D5B0D0044F4D6 /* GanttChartCommonClass.swift in Sources */,
 				046F9C681F6CB32700910EE4 /* OTGTodayFigureView.m in Sources */,
-				046F9C611F6CB32700910EE4 /* OTGChartProcessView.m in Sources */,
 				041573ED1F6FAB2D007200CA /* Date+generateString.swift in Sources */,
 				046F9C8E1F6CC1E400910EE4 /* GanttChartBaseViewCell.swift in Sources */,
 				046F9C831F6CC0AC00910EE4 /* GanttChartBaseView.swift in Sources */,
