@@ -31,8 +31,14 @@ public protocol GanttChartViewDelegate: class {
     
     func ganttChartView(_ ganttChartView: GanttChartView, backgroundColorForDate date: Date) -> UIColor
     
-    func ganttChartView(_ ganttChartView: GanttChartView, tappedSection section: section)
+    func ganttChartView(_ ganttChartView: GanttChartView, tappedSection section: Int)
     func ganttChartView(_ ganttChartView: GanttChartView, tappedRowAtIndexPath indexPath: IndexPath)
+    
+    func ganttChartVuew(_ ganttChartView: GanttChartView, tappedProcessView processView: GanttChartProcessView, section: Int)
+    func ganttChartVuew(_ ganttChartView: GanttChartView, tappedProcessView pointView: GanttChartPointView, section: Int)
+    
+    func ganttChartView(_ ganttChartView: GanttChartView, tappedProcessView processView: GanttChartProcessView, atIndexPath indexPath: IndexPath)
+    func ganttChartView(_ ganttChartView: GanttChartView, tappedPointView pointView: GanttChartPointView, atIndexPath indexPath: IndexPath)
 
 }
 
@@ -46,7 +52,13 @@ extension GanttChartViewDelegate {
     
     func ganttChartView(_ ganttChartView: GanttChartView, backgroundColorForDate date: Date) -> UIColor { return UIColor.clear }
     
-    func ganttChartView(_ ganttChartView: GanttChartView, tappedSection section: section) { }
+    func ganttChartView(_ ganttChartView: GanttChartView, tappedSection section: Int) { }
     func ganttChartView(_ ganttChartView: GanttChartView, tappedRowAtIndexPath indexPath: IndexPath) { }
+    
+    func ganttChartVuew(_ ganttChartView: GanttChartView, tappedProcessView processView: GanttChartProcessView, section: Int) {}
+    func ganttChartVuew(_ ganttChartView: GanttChartView, tappedProcessView pointView: GanttChartPointView, section: Int) {}
+    
+    func ganttChartView(_ ganttChartView: GanttChartView, tappedProcessView processView: GanttChartProcessView, atIndexPath indexPath: IndexPath) {}
+    func ganttChartView(_ ganttChartView: GanttChartView, tappedPointView pointView: GanttChartPointView, atIndexPath indexPath: IndexPath) {}
     
 }

@@ -10,13 +10,17 @@ import Foundation
 
 class GanttChartCommonClass {
     
-    func foundSameDateIndex(from array: Array<Date>, date: Date) -> Int? {
+    class func foundSameDateIndex(from array: Array<Date>, date: Date?) -> Int? {
+        guard let date = date else {
+            return nil
+        }
+        
         let sortedArray = array.sorted(by: { $0 < $1 })
         return sortedArray.index(of: date)
     }
     
-    func isContainProcess(from processStart: Date,to processLast: Date) -> Bool {
-        
+    
+    class func isShowingProcess(from processStart: Date,to processLast: Date) -> Bool {
         let showDateArray = GanttChartData.sharedInstance.showDateArray
         
         guard let start = showDateArray.first else {

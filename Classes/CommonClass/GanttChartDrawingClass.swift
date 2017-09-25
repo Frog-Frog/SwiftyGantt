@@ -8,11 +8,11 @@
 
 import Foundation
 
-class GanttChartDrawingClasse {
+class GanttChartDrawingClass {
     //MARK: - Draw Line
-    class func drawDateSeparator(in view: UIView, rect: CGRect, width: CGFloat, color: UIColor) {
+    class func drawDateSeparator(in view: UIView, rect: CGRect, lineWidth: CGFloat, color: UIColor) {
         let linePath = UIBezierPath()
-        linePath.lineWidth = width
+        linePath.lineWidth = lineWidth
         
         color.setStroke()
         
@@ -49,7 +49,7 @@ class GanttChartDrawingClasse {
     }
     
     
-    class func drawCenterSeparator(rect: CGRect, y: CGFloat, lineWidth: CGFloat, color: UIColor, dashPattern: UnsafePointer<CGFloat>?) {
+    class func drawCenterSeparator(rect: CGRect, center: CGFloat, lineWidth: CGFloat, color: UIColor, dashPattern: UnsafePointer<CGFloat>?) {
         let separatorPath = UIBezierPath()
         
         color.setStroke()
@@ -59,8 +59,8 @@ class GanttChartDrawingClasse {
             separatorPath.setLineDash(pattern, count: 2, phase: 0)
         }
         
-        separatorPath.move(to: CGPoint(x: rect.origin.x, y: y))
-        separatorPath.addLine(to: CGPoint(x: rect.origin.x + rect.size.width, y: y))
+        separatorPath.move(to: CGPoint(x: rect.origin.x, y: center))
+        separatorPath.addLine(to: CGPoint(x: rect.origin.x + rect.size.width, y: center))
         
         separatorPath.stroke()
     }
@@ -114,55 +114,14 @@ class GanttChartDrawingClasse {
     }
     
     
-    // MARK: - Draw String
-    class func draw(circleIn: CGRect, strokeWidth: CGFloat, strokeColor: UIColor, fillColor: UIColor) {
-        let circlePath = UIBezierPath(ovalIn: circleIn)
-        
-        circlePath.lineWidth = strokeWidth
+    // MARK: - Draw Figure
+    class func draw(figurePath: UIBezierPath, strokeWidth: CGFloat, strokeColor: UIColor, fillColor: UIColor) {
+        figurePath.lineWidth = strokeWidth
         
         fillColor.setFill()
         strokeColor.setStroke()
         
-        circlePath.fill()
-        circlePath.stroke()
-    }
-    
-    
-    class func draw(triangleIn: CGRect, strokeWidth: CGFloat, strokeColor: UIColor, fillColor: UIColor) {
-        let trianglePath = UIBezierPath(triangleIn: triangleIn)
-        
-        trianglePath.lineWidth = strokeWidth
-        
-        fillColor.setFill()
-        strokeColor.setStroke()
-        
-        trianglePath.fill()
-        trianglePath.stroke()
-    }
-    
-    
-    class func draw(diamondIn: CGRect, strokeWidth: CGFloat, strokeColor: UIColor, fillColor: UIColor) {
-        let diamondPath = UIBezierPath(diamondIn: diamondIn)
-        
-        diamondPath.lineWidth = strokeWidth
-        
-        fillColor.setFill()
-        strokeColor.setStroke()
-        
-        diamondPath.fill()
-        diamondPath.stroke()
-    }
-    
-    
-    class func draw(squareIn: CGRect, strokeWidth: CGFloat, strokeColor: UIColor, fillColor: UIColor) {
-        let squarePath = UIBezierPath(rect: squareIn)
-        
-        squarePath.lineWidth = strokeWidth
-        
-        fillColor.setFill()
-        strokeColor.setStroke()
-        
-        squarePath.fill()
-        squarePath.stroke()
+        figurePath.fill()
+        figurePath.stroke()
     }
 }

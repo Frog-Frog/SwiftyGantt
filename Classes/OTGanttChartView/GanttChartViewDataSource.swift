@@ -28,20 +28,20 @@ public protocol GanttChartViewDataSource: class {
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfRowsInSection section: Int) -> Int
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfProcessViewsInIndexPath indexPath: IndexPath) -> Int
-    func ganttChartView(_ ganttChartView: GanttChartView, chartProcessViewAtIndexPath indexPath: IndexPath, processNo: Int) -> GanttChartProcessView
+    func ganttChartView(_ ganttChartView: GanttChartView, chartProcessViewAtIndexPath indexPath: IndexPath, count: Int) -> GanttChartProcessView?
     
     
     // Optional
     func numberOfSections(in ganttChartView: GanttChartView) -> Int
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfPointViewsInSection section: Int) -> Int
-    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtSection section: Int, pointNo: Int) -> GanttChartPointView
+    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtSection section: Int, count: Int) -> GanttChartPointView?
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfProcessViewsInSection section: Int) -> Int
-    func ganttChartView(_ ganttChartView: GanttChartView, chartProcessViewAtSection section: Int, pointNo: Int) -> GanttChartProcessView
+    func ganttChartView(_ ganttChartView: GanttChartView, chartProcessViewAtSection section: Int, count: Int) -> GanttChartProcessView?
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfPointViewsInIndexPath indexPath: IndexPath) -> Int
-    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtIndexPath indexPath: IndexPath, pointNo: Int) -> GanttChartPointView
+    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtIndexPath indexPath: IndexPath, count: Int) -> GanttChartPointView?
     
 }
 
@@ -50,12 +50,12 @@ extension GanttChartViewDataSource {
     func numberOfSections(in ganttChartView: GanttChartView) -> Int { return 1 }
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfPointViewsInSection section: Int) -> Int { return 0 }
-    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtSection section: Int, pointNo: Int) -> GanttChartPointView { return }
+    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtSection section: Int, count: Int) -> GanttChartPointView? { return nil }
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfProcessViewsInSection section: Int) -> Int { return 0 }
-    func ganttChartView(_ ganttChartView: GanttChartView, chartProcessViewAtSection section: Int, pointNo: Int) -> GanttChartProcessView { return }
+    func ganttChartView(_ ganttChartView: GanttChartView, chartProcessViewAtSection section: Int, count: Int) -> GanttChartProcessView? { return nil }
     
     func ganttChartView(_ ganttChartView: GanttChartView, numberOfPointViewsInIndexPath indexPath: IndexPath) -> Int { return 0 }
-    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtIndexPath indexPath: IndexPath, pointNo: Int) -> GanttChartPointView { return }
+    func ganttChartView(_ ganttChartView: GanttChartView, chartPointViewAtIndexPath indexPath: IndexPath, count: Int) -> GanttChartPointView? { return nil }
     
 }

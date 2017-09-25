@@ -17,7 +17,6 @@
  
  */
 
-#import "OTGCommonClass.h"
 
 #import "OTGChartViewCell.h"
 

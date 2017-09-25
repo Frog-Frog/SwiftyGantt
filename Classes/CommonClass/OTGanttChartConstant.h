@@ -99,56 +99,5 @@ static const CGFloat OTGFigurePeripheryWidth = 2.0;
 static const CGFloat OTGFigureSideMargin = 4.0f;
 
 
-/**
- 内部で使用している定数なので変更しないこと
- */
-#pragma mark - Don't Change!!!!
-/**
- カラーテーマ
-
- - OTGThemeModeDark: ダークモード
- - OTGThemeModeBright: ブライトモード
- - OTGThemeModeCustom: カスタムモード
- */
-typedef NS_ENUM(NSInteger, OTGThemeMode)
-{
-    OTGThemeModeDark,
-    OTGThemeModeBright
-};
-
-
-/**
- パーツ区分
-
- - OTGPartsTypeSeparator: セパレーターと文字
- - OTGPartsTypeChartBackGround: チャート内背景
- - OTGPartsTypeCategoryBackGround: チャート外背景
- */
-typedef NS_ENUM(NSInteger, OTGPartsType)
-{
-    OTGPartsTypeDateSeparator,
-    OTGPartsTypeDotSeparator,
-    OTGPartsTypeRowSeparator,
-    OTGPartsTypeChartBorder,
-    OTGPartsTypeDateAreaBackground,
-    OTGPartsTypeProcessAreaBackground,
-    OTGPartsTypePointAreaBackground,
-    OTGPartsTypeScrollBackground,
-    OTGPartsTypeTodayHighlitedBackground,
-    OTGPartsTypeDateText,
-    OTGPartsTypeTodayHighlitedDateText,
-    OTGPartsTypeRefreshArrowImage,
-    OTGPartsTypeTodayLineColor
-};
-
-
-typedef NS_ENUM(NSInteger, OTGFigureType)
-{
-    OTGFigureTypeNone,
-    OTGFigureTypeCircle,
-    OTGFigureTypeTriangle,
-    OTGFigureTypeDiamond,
-    OTGFigureTypeSquare,
-};
 
 #endif /* OTGanttChartConstant_h */

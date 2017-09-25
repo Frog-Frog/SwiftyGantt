@@ -639,7 +639,7 @@
         [processDateArray enumerateObjectsUsingBlock:^(NSDate * _Nonnull date, NSUInteger idx, BOOL * _Nonnull stop) {
             
             if (![OTGCommonClass isContainDate:date
-                                     startDate:[weakSelf.showDateArray firstObject]
+                                     startDate:[weakSelf.showDateArray fir stObject]
                                       lastDate:[weakSelf.showDateArray lastObject]]) {
                 //日付が表示範囲外の時は計算しない
                 return;

@@ -16,8 +16,7 @@ open class GanttChartProcessView: UIView {
     
     weak var delegate: GanttChartProcessViewDelegate?
     
-    var indexPath: IndexPath?
-    var processNo: Int?
+    var indexPath = IndexPath()
     
     var dateArray = Array<Date>()
     let showDateArray = GanttChartData.sharedInstance.showDateArray
@@ -51,7 +50,7 @@ open class GanttChartProcessView: UIView {
     open var dotBlankWidth: CGFloat = 8
     open var dotSolidLineWidth: CGFloat = 8
     
-    open var startRatio: CGFloat = 0 {
+    public var startRatio: CGFloat = 0 {
         didSet {
             if startRatio < 0 || 1 < startRatio {
                 startRatio = 0
@@ -59,7 +58,7 @@ open class GanttChartProcessView: UIView {
         }
     }
     
-    open var finishRatio: CGFloat = 1 {
+    public var finishRatio: CGFloat = 1 {
         didSet {
             if finishRatio < 0 || 1 < finishRatio {
                 finishRatio = 1
@@ -69,14 +68,9 @@ open class GanttChartProcessView: UIView {
     
     
     // MARK: - init
-    init(dateArray: Array<Date>) {
+    public init(dateArray: Array<Date>) {
         super.init(frame: CGRect.zero)
-        self.dateArray = dateArray
-    }
-    
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
+        self.dateArray = dateArray.sorted{$0 < $1}
         initialize()
     }
     
@@ -87,19 +81,19 @@ open class GanttChartProcessView: UIView {
     }
     
     
-    func initialize() {
+    private func initialize() {
         prepareGesture()
     }
     
     
-    func prepareGesture() {
+    private func prepareGesture() {
         let gesture = UITapGestureRecognizer.init(target: self, action: #selector(tappedProcessView(_:)))
         addGestureRecognizer(gesture)
     }
     
     
     // MARK: - LifeCycle
-    open override func willMove(toSuperview newSuperview: UIView?) {
+    override open func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         if titleTrackingEnabled && !title.isEmpty {
@@ -108,7 +102,7 @@ open class GanttChartProcessView: UIView {
     }
     
     
-    func putTitleLabel() {
+    private func putTitleLabel() {
         let titleStartX = calculateTitleStartX()
         let titleStartY = frame.size.height/2 + lineWidth/2
         
@@ -128,7 +122,7 @@ open class GanttChartProcessView: UIView {
         
         let textWidth = titleSize.width > maxTitleWidth ? maxTitleWidth : titleSize.width
         
-        titleLabel.frame = CGRect.init(x: titleStartX, y: titleStartY, width: textWidth, height: titleSize.height)
+        titleLabel.frame = CGRect(x: titleStartX, y: titleStartY, width: textWidth, height: titleSize.height)
         titleLabel.text = title
         titleLabel.lineBreakMode = .byTruncatingTail
         titleLabel.textAlignment = .left
@@ -141,7 +135,7 @@ open class GanttChartProcessView: UIView {
     }
     
     
-    func calculateTitleStartX() -> CGFloat {
+    private func calculateTitleStartX() -> CGFloat {
         let isContain = dateArray.first?.isContain(from: showDateArray.first, to: showDateArray.last) ?? false
     
         if isContain {
@@ -169,7 +163,7 @@ open class GanttChartProcessView: UIView {
     }
     
     
-    func drawProcessLine(_ rect: CGRect) {
+    private func drawProcessLine(_ rect: CGRect) {
         
         let firstDateIndex = GanttChartCommonClass.foundSameDateIndex(from: showDateArray, date: dateArray.first) ?? 0
         let lastDateIndex = GanttChartCommonClass.foundSameDateIndex(from: showDateArray, date: dateArray.last) ?? showDateArray.count - 1
@@ -218,35 +212,36 @@ open class GanttChartProcessView: UIView {
     }
     
     
-    func drawFigure(_ rect: CGRect) {
-        let figureRect = CGRect.init(x: figureLeftMargin, y: (rect.size.height - figureSize)/2, width: figureSize, height: figureSize)
-        switch figureType {
-        case .circle:
-            GanttChartDrawingClasse.draw(circleIn: figureRect,
-                                         strokeWidth: figureLineWidth,
-                                         strokeColor: strokeColor,
-                                         fillColor: fillColor)
-        case .triange:
-            GanttChartDrawingClasse.draw(circleIn: figureRect,
-                                         strokeWidth: figureLineWidth,
-                                         strokeColor: strokeColor,
-                                         fillColor: fillColor)
-        case.square:
-            GanttChartDrawingClasse.draw(squareIn: figureRect,
-                                         strokeWidth: figureLineWidth,
-                                         strokeColor: strokeColor,
-                                         fillColor: fillColor)
-        case.diamond:
-            GanttChartDrawingClasse.draw(diamondIn: figureRect,
-                                         strokeWidth: figureLineWidth, strokeColor: strokeColor,
-                                         fillColor: fillColor)
-        default:
+    private func drawFigure(_ rect: CGRect) {
+        guard let path = createFigurePath(rect) else {
             return
+        }
+        
+        GanttChartDrawingClass.draw(figurePath: path,
+                                    strokeWidth: figureLineWidth,
+                                    strokeColor: strokeColor,
+                                    fillColor: fillColor)
+    }
+    
+    private func createFigurePath(_ rect: CGRect) -> UIBezierPath? {
+        let figureRect = CGRect(x: figureLeftMargin, y: (rect.height - figureSize)/2, width: figureSize, height: figureSize)
+        
+        switch figureType {
+        case .none:
+            return nil
+        case .circle:
+            return UIBezierPath(ovalIn: figureRect)
+        case .triangle:
+            return UIBezierPath(triangleIn: figureRect)
+        case .diamond:
+            return UIBezierPath(diamondIn: figureRect)
+        case .square:
+            return UIBezierPath(rect: figureRect)
         }
     }
 
     
-    func drawTitle(_ rect: CGRect) {
+    private func drawTitle(_ rect: CGRect) {
         let titleStartX = calculateTitleStartX()
         let titleStartY = rect.size.height/2 + lineWidth/2
         let titleWidth = rect.size.width - titleStartX
@@ -254,19 +249,19 @@ open class GanttChartProcessView: UIView {
         
         let trimmingTitle = title.trimmingCharacters(in: NSCharacterSet.newlines)
         
-        GanttChartDrawingClasse.draw(trimmingTitle,
-                                     rect: CGRect.init(x: titleStartX, y: titleStartY, width: titleWidth, height: titleHeight),
-                                     font: UIFont.systemFont(ofSize: fontSize),
-                                     fontColor: fontColor,
-                                     backgroundColor: titleBackgroundColor,
-                                     textAlignment: .left,
-                                     lineBreakMode: .byTruncatingTail,
-                                     isAdjustFontSize: adjustFontSizeEnabled)
+        GanttChartDrawingClass.draw(trimmingTitle,
+                                    rect: CGRect(x: titleStartX, y: titleStartY, width: titleWidth, height: titleHeight),
+                                    font: UIFont.systemFont(ofSize: fontSize),
+                                    fontColor: fontColor,
+                                    backgroundColor: titleBackgroundColor,
+                                    textAlignment: .left,
+                                    lineBreakMode: .byTruncatingTail,
+                                    isAdjustFontSize: adjustFontSizeEnabled)
     }
     
     
     // MARK: - Gesture
-    func tappedProcessView(_ gesture: UITapGestureRecognizer) {
+    @objc private func tappedProcessView(_ gesture: UITapGestureRecognizer) {
         delegate?.tappedChartProcessView(self)
     }
     

@@ -10,12 +10,38 @@ import UIKit
 
 class GanttChartBaseView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
     }
-    */
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initialize()
+    }
+    
+    
+    private func initialize() {
+        // load Xib
+        let bundle = Bundle(for: type(of: self))
+        let nibName = GanttChartBaseView.stringFromClass()
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+        addSubview(view)
+        
+        // adjust size
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let bindings = ["view": view]
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
+                                                      options: NSLayoutFormatOptions(rawValue: 0),
+                                                      metrics: nil,
+                                                      views: bindings))
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|",
+                                                      options: NSLayoutFormatOptions(rawValue: 0),
+                                                      metrics: nil,
+                                                      views: bindings))
+    }
 
 }

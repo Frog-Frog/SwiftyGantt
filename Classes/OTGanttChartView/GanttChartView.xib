@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gantt_icon_arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="JEN-Ef-XN7">
-                    <rect key="frame" x="25" y="325" width="50" height="50"/>
+                    <rect key="frame" x="165" y="325" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="29H-J8-fCu"/>
                         <constraint firstAttribute="height" constant="50" id="CBT-Sb-wlU"/>
@@ -35,23 +36,25 @@
                         <constraint firstAttribute="height" constant="50" id="R6V-dm-Nzh"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjV-I8-JYm">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="700"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="dZb-MG-c4Q">
-                    <rect key="frame" x="0.0" y="0.0" width="700" height="700"/>
+                    <rect key="frame" x="140" y="0.0" width="560" height="700"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2n-eF-ync" customClass="OTGChartView">
-                            <rect key="frame" x="0.0" y="0.0" width="700" height="700"/>
+                            <rect key="frame" x="0.0" y="0.0" width="560" height="700"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="700" id="x1J-c7-EQ8"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="E2n-eF-ync" firstAttribute="leading" secondItem="dZb-MG-c4Q" secondAttribute="leading" id="AYM-6F-Yab"/>
                         <constraint firstAttribute="trailing" secondItem="E2n-eF-ync" secondAttribute="trailing" id="Eoc-Le-Nrt"/>
+                        <constraint firstItem="E2n-eF-ync" firstAttribute="width" secondItem="dZb-MG-c4Q" secondAttribute="width" id="KPM-aO-Uga"/>
                         <constraint firstAttribute="bottom" secondItem="E2n-eF-ync" secondAttribute="bottom" id="cEm-bV-a1V"/>
                         <constraint firstItem="E2n-eF-ync" firstAttribute="height" secondItem="dZb-MG-c4Q" secondAttribute="height" id="eeQ-4P-j2z"/>
                         <constraint firstItem="E2n-eF-ync" firstAttribute="top" secondItem="dZb-MG-c4Q" secondAttribute="top" id="krV-db-zk9"/>
-                        <constraint firstItem="E2n-eF-ync" firstAttribute="leading" secondItem="dZb-MG-c4Q" secondAttribute="leading" id="l9g-97-jYz"/>
                     </constraints>
                     <connections>
                         <outlet property="delegate" destination="-1" id="R9O-22-bV2"/>
@@ -59,14 +62,18 @@
                 </scrollView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="wfo-D9-QoA" secondAttribute="trailing" constant="25" id="Aje-gK-RWG"/>
-                <constraint firstItem="dZb-MG-c4Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Cfr-1K-wxr"/>
-                <constraint firstItem="JEN-Ef-XN7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="JIr-hx-dMh"/>
-                <constraint firstItem="dZb-MG-c4Q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zek-Eo-xsO"/>
-                <constraint firstItem="dZb-MG-c4Q" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="igy-XC-qad"/>
+                <constraint firstItem="wjV-I8-JYm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="Blq-GF-jkt"/>
+                <constraint firstItem="wjV-I8-JYm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FBE-c6-FfQ"/>
+                <constraint firstItem="dZb-MG-c4Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FZG-jT-gc5"/>
+                <constraint firstAttribute="bottom" secondItem="dZb-MG-c4Q" secondAttribute="bottom" id="Hck-1k-mcq"/>
+                <constraint firstItem="wjV-I8-JYm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V5V-V3-J8a"/>
+                <constraint firstItem="dZb-MG-c4Q" firstAttribute="leading" secondItem="wjV-I8-JYm" secondAttribute="trailing" id="cbv-za-Gzj"/>
+                <constraint firstAttribute="trailing" secondItem="dZb-MG-c4Q" secondAttribute="trailing" id="dZd-J7-REp"/>
+                <constraint firstItem="wfo-D9-QoA" firstAttribute="trailing" secondItem="dZb-MG-c4Q" secondAttribute="trailing" constant="-25" id="gqQ-ms-4Xz"/>
                 <constraint firstItem="wfo-D9-QoA" firstAttribute="centerY" secondItem="dZb-MG-c4Q" secondAttribute="centerY" id="opg-sr-5BQ"/>
-                <constraint firstItem="dZb-MG-c4Q" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="uDn-iF-ArC"/>
+                <constraint firstAttribute="bottom" secondItem="wjV-I8-JYm" secondAttribute="bottom" id="uHc-Lv-hPW"/>
                 <constraint firstItem="JEN-Ef-XN7" firstAttribute="centerY" secondItem="dZb-MG-c4Q" secondAttribute="centerY" id="wxC-Pr-jyW"/>
+                <constraint firstItem="JEN-Ef-XN7" firstAttribute="leading" secondItem="dZb-MG-c4Q" secondAttribute="leading" constant="25" id="yJa-Yr-r3V"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="55" y="46"/>
